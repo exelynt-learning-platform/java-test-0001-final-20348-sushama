@@ -1,14 +1,14 @@
 public class Main {
 
     // Height of the diamond pattern
-    private static final int PATTERN_HEIGHT = 5;
+    private static final int DIAMOND_HEIGHT = 5;
 
     public static void main(String[] args) {
 
-        // Upper part of diamond
-        for (int i = 1; i <= PATTERN_HEIGHT; i++) {
+        // Upper half of the diamond
+        for (int i = 1; i <= DIAMOND_HEIGHT; i++) {
 
-            for (int j = i; j < PATTERN_HEIGHT; j++) {
+            for (int j = i; j < DIAMOND_HEIGHT; j++) {
                 System.out.print(" ");
             }
 
@@ -24,10 +24,10 @@ public class Main {
             System.out.println();
         }
 
-        // Lower part of diamond
-        for (int i = PATTERN_HEIGHT - 1; i >= 1; i--) {
+        // Lower half of the diamond
+        for (int i = DIAMOND_HEIGHT - 1; i >= 1; i--) {
 
-            for (int j = PATTERN_HEIGHT; j > i; j--) {
+            for (int j = DIAMOND_HEIGHT; j > i; j--) {
                 System.out.print(" ");
             }
 
